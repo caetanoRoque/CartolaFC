@@ -1,26 +1,26 @@
-import { useState , useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import './Atleta.css'
 import axios from 'axios'
 
-function Atleta() {
-    const API = "https://api.cartola.globo.com/atletas/pontuados/1"
-  
-    useEffect(()=>{
-      axios.get(API)
-      .then(async ({data}) => {
-        console.log(data)
-          
-      }, err => {
-        alert('Not Found')
-      })
-    }, [])
-    
-  
-    return (
-      <>
-       <h1>Cartola FC</h1>
-      </>
-    )
-  }
+function Atleta({ nome, foto, clube, clubeFoto, posicao, pontuacao }) {
 
-  export default Atleta
+
+  return (
+    <div className="container">
+      <div className="texLeft">
+        <h3>{nome}</h3>
+      </div>
+      <img src={foto} alt="foto do atleta" width="100px"/>
+      <div className="texLeft">
+        <h4>{posicao}</h4>
+        <h4>{clube}</h4>
+      </div>
+      <div className="align">
+        <img src={clubeFoto} alt="foto do escudo" />
+        <h5>{parseFloat(pontuacao.toFixed(1))}</h5>
+      </div>
+    </div>
+  )
+}
+
+export default Atleta

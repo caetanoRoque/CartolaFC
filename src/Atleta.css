@@ -1,0 +1,39 @@
+.container{
+    border-radius: 20px;
+    border: 1px solid rgb(255, 55, 0);
+    width: 200px;   
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.63);
+    color: white;
+}
+.align{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+}
+.texLeft{
+    text-align: left;
+    width: 100%;
+}
+h3{
+    color: orange;
+}
+h4{
+    margin: 6px;
+    
+}
+h5{
+    font-size: 15px;
+    color: orange;
+    border: 2px solid rgb(255, 55, 0);
+    border-radius: 20px;
+    text-align: center;
+    width: 30px;
+}
+
+
