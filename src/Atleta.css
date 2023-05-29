@@ -11,6 +11,7 @@
     background-color: rgba(0, 0, 0, 0.63);
     color: white;
     font-family: 'Lato', sans-serif;
+    box-shadow: 10px 10px 10px black;
 }
 .align{
     display: flex;
