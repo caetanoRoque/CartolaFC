@@ -5,7 +5,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.63);
@@ -25,6 +25,7 @@
 }
 h3{
     color: orange;
+    margin: 0;
 }
 h4{
     margin: 6px;
