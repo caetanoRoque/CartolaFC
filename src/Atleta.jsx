@@ -10,7 +10,7 @@ function Atleta({ nome, foto, clube, clubeFoto, posicao, pontuacao }) {
       <div className="texLeft">
         <h3>{nome}</h3>
       </div>
-      <img src={foto} alt="foto do atleta" width="100px"/>
+      <img src={foto.replace("FORMATO","220x220")} alt="foto do atleta" width="100px"/>
       <div className="texLeft">
         <h4>{posicao}</h4>
         <h4>{clube}</h4>
