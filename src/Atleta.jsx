@@ -1,6 +1,4 @@
-import { useState, useEffect } from 'react'
 import './Atleta.css'
-import axios from 'axios'
 
 function Atleta({ nome, foto, clube, clubeFoto, posicao, pontuacao }) {
 
