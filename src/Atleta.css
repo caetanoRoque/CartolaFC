@@ -12,7 +12,12 @@
     color: white;
     font-family: 'Lato', sans-serif;
     box-shadow: 10px 10px 10px black;
+    transition: 0.3s;
+
     
+}
+.container:hover{
+    transform: translateY(-10px);
 }
 .align{
     display: flex;
